@@ -44,9 +44,38 @@ print(mesage)
 
 "Isso é uma string." 
 "Isso também é uma string."
-
+#
 #  ###
 
+#%% [markdown]
+
+### 
+# ## Métodos de Strings
+# 
+# > - Palavras-chave: title(), upper(), lower()
+# 
+# Método é a ação que  o Python pode executar em algum dado. Abaixo um exemplo:  
+# ####
+
+# Vamos criar uma variável e atribuir a ela um nome qualquer em minúsculo
+
+nome = "john ronald reuel tolkien"
+
+# em seguida vamos colocar as primeiras letras em maiúsculo, utilizando o método title()
+
+nome.title()
+
+# assim aplicamos à variavel nome um método, através do operador de ponto "."
+# [nome da variável].[nome do método] ([valor, quando necessário])
+
+nome.upper()
+nome.lower()
+
+primeiro_nome = "J.R.R"
+segundo_nome = "Tolkien"
+nome_completo = primeiro_nome + " " + segundo_nome
+print(nome_completo)
+
+#%% [markdown]
 
 
-#%%
