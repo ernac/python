@@ -33,13 +33,8 @@ nine = x[9]
 numeros = [zero, one, two, three, four, five, six, seven, eight, nine]
 print(numeros[-3])
 
-#%%
-# Veficação
-
 1 in numeros
 'a' in numeros
-
-#%%
 
 # Concatenando listas usando a função extend
 
@@ -49,5 +44,32 @@ lista1
 
 # Caso não queira modificar lista1, basta adicionar mais elementos
 
-lista3 = lista1 + [4,5,6]
+lista3 = lista1 + [7,8,9]
 lista3
+
+# geralmente os itens são adicionados (append) um de cada vez
+
+lista3.append(0)
+lista3
+
+#%%
+# Tuplas
+# São os primos imutáveis das listas. Tuplas não podem ser alteradas
+# Tuplas são definidas usando parênteses, colchetes ou nada
+
+tupla = (1,2,3)
+tupla = 1,2,3
+
+# Tuplas podem ser usados para múltipla atribuição
+
+x,y = 1,2
+x
+y
+
+#%%
+
+# Dicionários
+
+# Estrutura de dados que associa um valor a uma determinada chave
+
+
