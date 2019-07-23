@@ -76,6 +76,43 @@ segundo_nome = "Tolkien"
 nome_completo = primeiro_nome + " " + segundo_nome
 print(nome_completo)
 
-#%% [markdown]
+#%% 
 
+# Removendo espaços em branco
 
+linguagem_favorita = ' python '
+
+# lstrip() remove espaços à direita e rstrip() remove espaços à direita
+# Nesse caso, é necessário atribuir as mudanças à própria variável para que elas tenham efeito
+
+linguagem_favorita = linguagem_favorita.lstrip()
+linguagem_favorita = linguagem_favorita.rstrip()
+linguagem_favorita
+
+#%%
+
+# Erros para conversão em strings
+
+message1 = 'Bem Vindo à '
+valor = 23
+message2 = 'ª Oktobeerfest'
+
+#print(message1 + valor + message2)
+
+# O erro TypeError: cannot concatenate 'str' and 'int' objects mostra que o Python não conseguiu interpretar a exibição do dado adequadamente (tranformar um inteiro em string)
+
+# Para resolver essa questão é necessário recorrer à função str(), que converterá o inteiro em string e irá exibir a mensagem de forma adequada
+
+print(message1 + str(valor) + message2)
+
+#%%
+
+# Divisão de números inteiros em Python 2
+
+# Os números inteiros em divisão tem como resultado um número inteiro
+# Para evitar isso, faça com que um dos números seja um float. Assim a conversão será feita de forma automática
+
+inteiro = 3/2
+inteirop2 = 3/2.0
+print inteiro
+print inteirop2
