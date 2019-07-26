@@ -43,3 +43,66 @@ print cores
 del cores[0] # deletando a cor roxo
 print cores
 
+# Os dados removidos com del não podem mais ser acessados
+#%%
+# Usando o método pop() para remover os itens de uma lista
+
+# O método pop() remove o último item de uma lista, porém permite que você trabalhe com ele após a remoção.
+
+cores = ['azul', 'branco', 'preto', 'rosa']
+print cores
+
+# vamos usar o método pop() para remover o item da lista
+
+cor_removida = cores.pop()
+print cores
+print cor_removida
+
+# para remover qualquer item da lista basta indicar com o índice
+
+cor_indice = cores.pop(2)
+print cor_indice
+
+#%%
+
+# removendo o item de acordo com o valor - método remove()
+
+frutas = ['laranja', 'pera', 'uva', 'abacaxi']
+print frutas
+
+
+#%%
+# Ordenando listas de forma permanente
+
+nomes = ['Joy','Lud','Nic','Aurora','Bruna','Gabriella']
+nomes.sort()
+nomes.sort(reverse= True)
+print nomes
+
+# Ordenando as listas de forma temporária usando sorted()
+
+print (sorted(nomes, reverse=True))
+print nomes
+
+#%%
+
+# para imprimir uma lista em ordem contrária usamos reverse() de forma permanente
+
+bare_bears = ['Panda', 'Polar','Pardo']
+bare_bears.reverse()
+print bare_bears
+
+# Para retornar ao padrão anterior, basta aplicar novamente o método
+
+#%%
+
+# Descobrindo o tamanho de uma lista com a função len()
+
+sala = ['cadeiras','mesa','sofa','tv']
+
+sala.__len__() 
+
+
+
+
+
