@@ -8,12 +8,15 @@ names = ['Fran','Thais','Ana'] # lista em criada
 for i in names: # atenção aos dois pontos após a instrução for
     print i # a opção print vem com indentação. Caso contrário, é exibido um erro.
 
+#%%
 # Concatenando texto usando for
 
 names = ['Fran','Thais','Ana'] # lista em criada
 for nome in names: # atenção aos dois pontos após a instrução for
     print nome.title() + ", que horas são?" # a opção print vem com indentação. Caso contrário, é exibido um erro.
 
+
+#%%
 # Listas numéricas
 
 # Função range()
@@ -25,10 +28,13 @@ for valores in range(1,10): #observar que o range é excludente na última opç�
 
 # Fazendo listas com progressão aritmética. Acrescentando um valor fixo até determinado número
 
+#%% 
 # Números Pares até 12
 
 pares = [range(2,14,2)]
 print pares
+
+#%% 
 
 # Quadrados Perfeitos de 1 a 10 - Todos os números gerados são elevados ao quadrado e armazenados numa lista chamada quadrados
 
@@ -48,6 +54,7 @@ min(digitos) #1
 max(digitos) #10
 sum(digitos) #55
 
+#%%
 # List Comprehensions 
 
 # Conceito

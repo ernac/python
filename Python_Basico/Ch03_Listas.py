@@ -74,7 +74,7 @@ print frutas
 #%%
 # Ordenando listas de forma permanente
 
-nomes = ['Jo','Lu','Nic','Au','Bru','Gabi']
+nomes = ['Jo','Lu','Nic','Au','Bi']
 nomes.sort()
 nomes.sort(reverse= True)
 print nomes
