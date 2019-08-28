@@ -128,24 +128,14 @@ print 'Pizza terminada!'
 
 ### As pessoas pedirão de tudo, em especial quando se tratar de ingredientes para uma pizza. E se um cliente realmente quiser batatas fritas em sua pizza? Podemos usar listas e instruções if para garantir que o dado de entrada faça sentido antes de atuar sobre ele. Vamos prestar atenção em solicitações de ingredientes incomuns antes de prepararmos uma pizza. O exemplo a seguir define duas listas. A primeira é uma lista de ingredientes disponíveis na pizzaria, e a segunda é a lista de ingredientes que o usuário pediu. ###
 
-disponivel = ['cogumelos', 'azeitonas', 'pimentao', 'pepperoni', 'abacaxi', 'queijo']
+disponivel = ['cogumelo', 'azeitona', 'pimentao', 'pepperoni', 'abacaxi', 'queijo']
+pedido = ['cogumelo', 'batatas', 'queijo']
 
-solicitados = ['cogumelos', 'batata frita', 'queijo']
+for pedidos in pedido:
+    if pedidos in disponivel:
+        print ("Adicionado " + pedidos + ".")
+    else:
+        print ("Lamento, não temos " + pedidos + ".")
 
-for disponivel in solicitados:
-    if disponivel in solicitados:
-         print("Adicionando " + solicitados + ".")
-    else: 
-         print("Lamento não temos" + solicitados + ".")
+print ("\nPizza terminada")
         
-#%% 
-
-available_toppings = ['mushrooms', 'olives', 'green peppers','pepperoni', 'pineapple', 'extra cheese']
-requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
-for requested_topping in requested_toppings: 
-    if requested_topping in available_toppings:
-        print("Adding " + requested_topping + ".")
-    else: 
-        print("Sorry, we don't have " + requested_topping + ".")
-
-print("\nFinished making your pizza!")
